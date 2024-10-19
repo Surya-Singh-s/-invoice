@@ -39,11 +39,13 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            table-layout: fixed; /* Add this */
         }
         table th, table td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: center;
+            word-wrap: break-word; /* Prevent text overflow */
         }
         .table-header th {
             background-color: #f0f0f0;
@@ -135,7 +137,6 @@
                     <td>Price</td>
                     <td>0</td>
                     <td>0</td>
-                    <td>Price</td>
                     <td>Price</td>
                 </tr>
             </tbody>
