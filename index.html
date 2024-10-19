@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+        .invoice-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+        .company-details, .invoice-details {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .company-details p, .invoice-details p {
+            margin: 4px 0;
+        }
+        .bill-to, .table-header, .total-summary {
+            background-color: #f0f0f0;
+            padding: 10px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .table-header th {
+            background-color: #f0f0f0;
+        }
+        .total-summary {
+            text-align: right;
+        }
+        .signature {
+            margin-top: 30px;
+            text-align: right;
+        }
+        .signature p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-box">
+        <h1>Tax Invoice</h1>
+        <div class="company-details">
+            <p><strong>Company Name</strong></p>
+            <p>Address Line 1</p>
+            <p>Address Line 2</p>
+            <p>City, State, Pincode</p>
+            <p>GSTIN: 22AAAAA0000A1Z5</p>
+        </div>
+
+        <div class="invoice-details">
+            <p><strong>Invoice No:</strong> INV-001</p>
+            <p><strong>Invoice Date:</strong> 19-Oct-2024</p>
+            <p><strong>Due Date:</strong> 26-Oct-2024</p>
+        </div>
+
+        <div class="bill-to">
+            <p><strong>Bill To:</strong></p>
+            <p>Customer Name</p>
+            <p>Customer Address Line 1</p>
+            <p>Customer Address Line 2</p>
+            <p>City, State, Pincode</p>
+            <p>GSTIN: 22BBBBB0000B1Z6</p>
+        </div>
+
+        <table>
+            <thead class="table-header">
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Description of Goods/Services</th>
+                    <th>HSN/SAC</th>
+                    <th>Quantity</th>
+                    <th>Rate (₹)</th>
+                    <th>Amount (₹)</th>
+                    <th>CGST (9%)</th>
+                    <th>SGST (9%)</th>
+                    <th>IGST (18%)</th>
+                    <th>Total (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Product/Service 1</td>
+                    <td>1234</td>
+                    <td>2</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                    <td>0</td>
+                    <td>Price</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Product/Service 2</td>
+                    <td>5678</td>
+                    <td>1</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                    <td>0</td>
+                    <td>Price</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Product/Service 3</td>
+                    <td>4321</td>
+                    <td>1</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>Price</td>
+                    <td>Price</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="total-summary">
+            <p>Total Tax Summary (₹):</p>
+            <p>CGST: ₹price</p>
+            <p>SGST: ₹price</p>
+            <p>IGST: ₹price</p>
+            <p><strong>Grand Total: ₹price</strong></p>
+        </div>
+
+        <div class="signature">
+            <p>Authorized Signature</p>
+            <p>For Company Name</p>
+        </div>
+    </div>
+</body>
+</html>
